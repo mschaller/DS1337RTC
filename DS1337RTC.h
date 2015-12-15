@@ -6,6 +6,11 @@
 #ifndef DS1337RTC_h
 #define DS1337RTC_h
 
+// uncomment the following line if you intend to use the I2C-Library from
+// Wayne Truchsess (http://dsscircuits.com/index.php/articles/66-arduino-i2c-master-library)
+// instead of Wire-Lib
+//#define USE_I2C_LIBRARY
+
 #include <Time.h>
 
 #define DS1337_CTRL_ID 0x68
@@ -44,5 +49,3 @@ class DS1337RTC
 extern DS1337RTC RTC;
 
 #endif
- 
-
